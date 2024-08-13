@@ -88,6 +88,12 @@ body {
 
 	background-color:white;
 	width:100%;
+	
+	span{
+		width:100%;
+		height:0px;
+		display:inline-block;
+	}
 }
 
 hr {
@@ -138,11 +144,7 @@ a:visited{
 	color:palegoldenrod
 }
 
-span{
-  width:100%;
-  height:0px;
-  display:inline-block;
-}
+
 
 .centerbox{
 	align:center;
@@ -176,10 +178,63 @@ span{
 		margin-top:1em;
 		padding-left:1em;
 		padding-right:1em;
-		padding-bottom:1em;
-		font-size:1svw;
+		margin-bottom:1em;
+		font-size:2svw;
 		font-weight:300;
 	}
+}
+
+.imagebox{
+	display:grid;
+	grid-auto-flow:dense;
+	grid-template-columns: repeat(3, 1fr);
+	margin-top:1em;
+	margin-bottom:1em;
+	padding-left:1em;
+	padding-right:1em;
+	width:95%;
+	align:center;
+	gap:10px;
+	
+	img{
+		width:100%;
+	}
+}
+
+.summarybox{
+	display:grid;
+	background-color:goldenrod;
+	grid-auto-flow:dense;
+	grid-template-columns: repeat(2, .9fr);
+	gap:10px, 0px;
+	padding-top:1em;
+	margin-bottom:1em;
+	
+	p{
+		margin-top:0;
+		padding-bottom:0;
+	}
+	
+	
+	iframe{
+		padding-left:1em;
+		align:center;
+	}
+}
+
+.iframewrapper{
+		margin-left:3em;
+		margin-right:9em;
+		padding-left:1em;
+		width:fill;
+		min-height:720px;
+		height: 25svw;
+	}
+	
+
+.bold {
+	font-style: bold;
+	font-weight:700;
 }
 
 </style>
@@ -208,7 +263,30 @@ span{
 <div class="centerbox">
 	<div class="portfoliobox">	
 		<h3>Procedural House Generator</h3>
-		<p>A tool to generate houses from a procedural pack quickly and easily.<br>break text here, then lorem ipsum dolor sit amet. Consiquentatus romanes eunt domum. chapter one. loomings. Call me Ishmael. Some time ago, never mind how long precisely - I decided to sail around, and see the watery parts of the world a little.</p>
+		<div class="iframewrapper">
+			<iframe width="1680" height="720" src="https://www.youtube.com/embed/Wz-6t5l0eRs">
+			</iframe>
+		</div>
+		<p>A tool to generate houses from a procedural pack quickly and easily.
+		Created to ease the workload on a small level design team who were required, thanks to our brief of a pizza delivery game, to build a town in a short period.</p>
+		<div class="imagebox">
+			<img src="Img\HouseGen\Tool-HM1-Doc.png">
+			<img src="Img\HouseGen\Tool-HM2-Doc.png">
+			<img src="Img\HouseGen\Tool-HM3-Doc.png">
+			<img src="Img\HouseGen\Tool-HM4-Doc.png">
+			<img src="Img\HouseGen\Tool-HM-DO1.png">
+			<img src="Img\HouseGen\Tool-HM-DO4.png">
+			<img src="Img\HouseGen\Tool-HM-ENG1.png">
+			<img src="Img\HouseGen\Tool-HM-ENG2.png">
+			<img src="Img\HouseGen\Model-R3-Turntable.gif">
+		</div>
+		<p>Although I had had time to make a prototype version of the tool using my own assets, I only recieved the final assets from our 3d art team within a week of the final deadline - and as they had not made clear specifications as to how they would create the assets, the tool had to be reworked in a matter of days so that the level designers could use it for the final build.</p>
+		<div class="summarybox">
+			<p><span class="bold">Tools:</span> Unreal Engine 5, Blender</p>
+			<p><span class="bold">Time:</span> 1 semester, concurrent with another module and while acting as producer.</p>
+			<p><span class="bold">Greatest challenge:</span> Tight turnaround between recieving the final modular pack and the final deadline. (<1 week)</p>
+			<p><span class="bold">Context:</span> Created during my Senior Collaborative Games Development module, as a piece of a final product created by a team of ~20.</p>
+		</div>
 		
 	</div>
 </div>
