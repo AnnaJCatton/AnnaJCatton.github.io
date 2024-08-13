@@ -14,6 +14,7 @@ body {
 	padding:0;
 	background-color:white;
 	display:block;	
+	font-family:monospace;
 }
 
 .rightbox{
@@ -31,7 +32,7 @@ body {
 	text-align: right;
 	padding:0;
 	font-family: monospace;
-	width:70svw;
+	width:75svw;
 	display:grid;
 
 	margin-bottom:5%;
@@ -59,7 +60,7 @@ body {
 	
 	p {
 		background-color: black;
-		color:orange;
+		color:goldenrod;
 		
 		margin-top:0px;
 		margin-bottom:0px;
@@ -129,6 +130,14 @@ a {
 	margin-top:0%;
 }
 
+a:link{
+	color:goldenrod;
+}
+	
+a:visited{
+	color:palegoldenrod
+}
+
 span{
   width:100%;
   height:0px;
@@ -142,8 +151,8 @@ span{
 }
 
 .portfoliobox{
-	background-color:Moccasin;
-	border-left:1svw solid orange ;
+	background-color:palegoldenrod;
+	border-left:1svw solid goldenrod ;
 	
 	width:95%;
 	margin:auto;
@@ -154,9 +163,23 @@ span{
 	
 	border-radius:.5svw;
 
+	h3{
+		padding-left:1em;
+		padding-right:1em;
+		font-size:3svw;
+		height:1svw;
+		line-height:-1svw;
+		font-weight:700;
+	}
 	
-
-	
+	p{
+		margin-top:1em;
+		padding-left:1em;
+		padding-right:1em;
+		padding-bottom:1em;
+		font-size:1svw;
+		font-weight:300;
+	}
 }
 
 </style>
@@ -184,7 +207,9 @@ span{
 
 <div class="centerbox">
 	<div class="portfoliobox">	
-		<p>hello world</p>
+		<h3>Procedural House Generator</h3>
+		<p>A tool to generate houses from a procedural pack quickly and easily.<br>break text here, then lorem ipsum dolor sit amet. Consiquentatus romanes eunt domum. chapter one. loomings. Call me Ishmael. Some time ago, never mind how long precisely - I decided to sail around, and see the watery parts of the world a little.</p>
+		
 	</div>
 </div>
 
