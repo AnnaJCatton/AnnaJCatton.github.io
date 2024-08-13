@@ -8,30 +8,20 @@
 
 <style>
 	
-hr {
-	border-style:none;
-	color:black;
-	background-color:black;
-	height:.8svh;
-	align:left;
-	width:95%;
-	margin-top:5%;
-	margin-bottom:5%;
-}
-
+	
 body {
 	margin:0;
 	padding:0;
 	background-color:white;
-	display:grid;
-	width:100%;
+	display:block;	
 }
 
 .rightbox{
 	float:right;
-		align:right;
+	align:right;
 	padding:0px;
 	width=100%;
+	margin-bottom:5%;
 	
 }
 
@@ -43,8 +33,8 @@ body {
 	font-family: monospace;
 	width:70svw;
 	display:grid;
-	float:right;
-		align:right;
+
+	margin-bottom:5%;
 	
 	h1 {
 		background-color:white;
@@ -59,7 +49,7 @@ body {
 		margin-bottom:0px;
 		
 		font-size:7svw;
-		
+		font-weight:600;
 		
 		grid-row-start:1;
 		grid-row-end:1;
@@ -80,12 +70,93 @@ body {
 		padding-bottom:1svh;
 		
 		font-size:7svw;
-		
+		font-weight:300;
 		
 		grid-row-start:2;
 		grid-row-end:2;
+		
 	}
 
+}
+
+.topspacer{
+
+	margin:auto;
+	bottom-margin:5%;
+	top-margin:5%;
+
+	background-color:white;
+	width:100%;
+}
+
+hr {
+	border-style:none;
+	color:black;
+	background-color:black;
+	height:.8svh;
+	align:left;
+	width:95%;
+	margin-top:5%;
+	margin-bottom:5%;
+}
+
+h2 {
+	font-family:monospace;
+	
+	text-align:justify;
+	text-justify:inter-character;
+	
+	font-size:4svw;
+	font-weight:300;
+	width:60svw;
+	
+	margin:0 auto;
+	margin-bottom:0%;
+	margin-top:5%;
+	
+}
+
+a {
+	font-family:monospace;
+	text-align:right;
+	
+	font-size:4svw;
+	font-weight:300;
+	
+	margin:45%;
+	
+	margin-bottom:5%;
+	margin-top:0%;
+}
+
+span{
+  width:100%;
+  height:0px;
+  display:inline-block;
+}
+
+.centerbox{
+	align:center;
+	margin:0;
+	padding:0;
+}
+
+.portfoliobox{
+	background-color:Moccasin;
+	border-left:1svw solid orange ;
+	
+	width:95%;
+	margin:auto;
+	padding:0;
+	float:center;
+	
+	margin-top:5%;
+	
+	border-radius:.5svw;
+
+	
+
+	
 }
 
 </style>
@@ -103,6 +174,18 @@ body {
 	</div>
 </div>
 
-<hr>
+<div class="topspacer">
+
+	<hr>
+	<h2>annajovis@gmail.com<span></span></h2>
+	<a href="Anna Jovis Catton - CV .docx">My CV</a>
+
+</div>
+
+<div class="centerbox">
+	<div class="portfoliobox">	
+		<p>hello world</p>
+	</div>
+</div>
 
 </body>
