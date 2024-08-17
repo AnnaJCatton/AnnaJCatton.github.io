@@ -8,13 +8,12 @@
 
 <style>
 	
-	
 body {
 	margin:0;
 	padding:0;
 	background-color:#202020;
 	display:block;	
-	font-family:monospace;
+	font-family: "Space Mono", "Brandon Grotesque", monospace;
 }
 
 .rightbox{
@@ -112,9 +111,9 @@ h2 {
 	text-align:justify;
 	text-justify:inter-character;
 	
-	font-size:4svw;
+	font-size:3svw;
 	font-weight:300;
-	width:65svw;
+	width:60svw;
 	line-height:25%;
 	
 	margin:0 auto;
@@ -127,7 +126,7 @@ a {
 	font-family:monospace;
 	text-align:right;
 	
-	font-size:4svw;
+	font-size:3svw;
 	font-weight:300;
 	
 	margin:45%;
@@ -209,6 +208,7 @@ a:visited{
 	grid-template-columns: repeat(2, .9fr);
 	gap:10px, 0px;
 	padding-top:1em;
+	padding-right:3svw;
 	margin-bottom:1em;
 	border-radius:0svw 0svw 2svw 1svw;
 	
@@ -222,6 +222,16 @@ a:visited{
 		padding-left:1em;
 		align:center;
 	}
+	
+	input{
+		font-size:2svw;
+		width:80%;
+		margin-left:10%;
+		margin-right:10%;
+		margin-bottom:2svw;
+		height:70%;
+		
+	}
 }
 
 .iframewrapper{
@@ -234,8 +244,18 @@ a:visited{
 	
 
 .bold {
-	font-style: bold;
 	font-weight:700;
+}
+
+.captionemphasis {
+	font-style: italic;
+	font-weight:300;
+}
+
+.pdf {
+	width:100%;
+	aspect-ratio: 2/1.3;
+	margin:0 auto;
 }
 
 </style>
@@ -256,14 +276,52 @@ a:visited{
 <div class="topspacer">
 
 	<hr>
-	<h2>Anna Jovis @Gmail.com<span></span></h2>
+	<h2>AnnaJovis @Gmail.com<span></span></h2>
 	<a href="Anna Jovis Catton - CV .docx">My CV</a>
 
 </div>
 
 <div class="centerbox">
+
 	<div class="portfoliobox">	
-		<h3>Procedural House Generator</h3>
+		<h3>Full Ahead! <span class="captionemphasis">- Co-op twin stick vehicle shooter</span></h3>
+		<div class="iframewrapper">
+			<img src="Img\FullAhead\TitleScreen.png" style="width:100%">
+		</div>
+		<p>My final year project, a co-op game designed to test teamwork by putting two players in control of half of a tank each.
+		The goal from the start was to have players yelling at one another lovingly - a goal I achieved in testing.<br>
+		All of the models, assets, and gameplay - with the exception of a purchased pack of foliage models - were designed and made by me. I am particularly proud of the tank asset and the speed-of-sound delay built into the shell's whistle audio, which is entirely synthesized, and it's explosion noise.</p>
+		<div class="imagebox" style="grid-template-columns: repeat(2, 1fr)">
+			<img src="Img\FullAhead\MapProgression.png">
+			<img src="Img\FullAhead\FinalMapScreenshot.png">
+			<img src="Img\FullAhead\TankRolling.gif">
+			<img src="Img\FullAhead\TankBlenderCombined.jpg">
+			
+		</div>
+		<p>The game went through many iterations, starting as a four-player experience wherein each player would be on their mobile devices, essentially playing minigames in real time to control a single tank on a larger shared screen. As the project developed, it became clear that this would lead to some players 'waiting their turn' in a non-turn based game, so I moved to a two-player model, which was far more engaging. I would later go on to develop a system for real-time mobile web control in the style of my original idea in my Emergent Games Technologies Module.</p>
+		
+		<div class="iframewrapper">
+			<object class="pdf" data="Img\FullAhead\Making Of Full Ahead.pdf#view=fitH">
+			</object>
+		</div>
+			
+		<div class="summarybox">
+		
+			<p><span class="bold">Tools:</span> Unreal Engine 5, Blender, Adobe Creative Suite</p>
+			<p><span class="bold">Time:</span> 2 semesters, concurrent with another module throughout.</p>
+			<p><span class="bold">Greatest challenge:</span> Creating the game entirely from scratch required me to learn several tools I had not yet used, such as the Metasounds editor, and the Chaos Wheeled Vehicle systems.</p>
+			<p><span class="bold">Context:</span> Entirely created solo for my Final Year Project module, for which I recieved a first-equivalent grade. (70%)</p>
+			<form action="https://google.com" target="_blank" style="margin-left:2svw;">
+				<input type="submit" value="Download the Windows Build" />
+			</form>
+			<p>Note: Requires a windows PC and two gamepads.</p>
+			
+		</div>
+		
+	</div>
+
+	<div class="portfoliobox">	
+		<h3>Pizza Time! <span class="captionemphasis">- Procedural House Generator</span></h3>
 		<div class="iframewrapper">
 			<iframe width="840" height="360" src="https://www.youtube.com/embed/Wz-6t5l0eRs">
 			</iframe>
@@ -283,13 +341,16 @@ a:visited{
 		</div>
 		<p>Although I had had time to make a prototype version of the tool using my own assets, I only recieved the final assets from our 3d art team within a week of the final deadline - and as they had not made clear specifications as to how they would create the assets, the tool had to be reworked in a matter of days so that the level designers could use it for the final build.</p>
 		<div class="summarybox">
-			<p><span class="bold">Tools:</span> Unreal Engine 5, Blender</p>
+			<p><span class="bold">Tools:</span> Unreal Engine 5, Blender, Adobe Creative Suite</p>
 			<p><span class="bold">Time:</span> 1 semester, concurrent with another module and while acting as producer.</p>
 			<p><span class="bold">Greatest challenge:</span> Tight turnaround between recieving the final modular pack and the final deadline. (<1 week)</p>
 			<p><span class="bold">Context:</span> Created during my Senior Collaborative Games Development module, as a piece of a final product created by a team of ~20.</p>
+			
+
 		</div>
 		
 	</div>
+	
 </div>
 
 </body>
