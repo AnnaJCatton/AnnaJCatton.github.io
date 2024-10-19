@@ -142,6 +142,9 @@ body {
 		
 		margin-bottom:1%;
 		margin-top:0%;
+		
+		
+		
 	}
 
 	a:link{
@@ -187,8 +190,15 @@ h2 {
 
 .centerbox{
 	align:center;
-	margin:0;
+	margin:auto;
 	padding:0;
+	
+	
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (min-width: 1000px) {
+		width:50%;
+	}
+	
 }
 
 .portfoliobox{
@@ -209,10 +219,19 @@ h2 {
 		padding-left:1em;
 		padding-right:1em;
 		padding-top:.2em;
-		font-size:3svw;
+		/*font-size:3svw;*/
 		height:1svw;
 		line-height:-1svw;
 		font-weight:700;
+		
+		@media only screen and (min-width: 1000px) {
+			font-size:1.5svw;
+		}
+		
+		@media only screen and (max-width: 1000px) {
+			font-size:3svw;
+		}
+		
 	}
 	
 	p{
@@ -222,7 +241,18 @@ h2 {
 		margin-bottom:1em;
 		font-size:2svw;
 		font-weight:300;
+			
+		@media only screen and (min-width: 1000px) {
+			font-size:1svw;
+		}
+		
+		@media only screen and (max-width: 1000px) {
+			font-size:2svw;
+		}	
+		
 	}
+	
+	
 }
 
 .imagebox{
@@ -242,6 +272,16 @@ h2 {
 	}
 }
 
+	iframe{
+		padding-left:1em;
+		width:100%;
+		position:relative;
+		aspect-ratio:2.3;
+		border:none;
+		overflow:auto;
+
+	}
+
 .summarybox{
 	display:grid;
 	background-color:goldenrod;
@@ -260,10 +300,7 @@ h2 {
 	}
 	
 	
-	iframe{
-		padding-left:1em;
 
-	}
 	
 	input{
 		font-size:1.5svw;
@@ -288,21 +325,62 @@ h2 {
 		margin-top:0;
 		padding-bottom:0;
 		color:black;
-		font-size:2svw;
+		/*font-size:2svw;*/
 		padding-left:1em;
 		padding-right:1em;
 		margin-bottom:1em;
 		font-weight:300;
+		
+		@media only screen and (min-width: 1000px) {
+			font-size:1svw;
+		}
+		
+		@media only screen and (max-width: 1000px) {
+			font-size:2svw;
+		}
+		
+	}
+	
+	form{
+		margin:0 auto;
+		
+		
+		@media only screen and (min-width: 1000px) {
+				width:25svw;
+
+			}
+			
+			@media only screen and (max-width: 1000px) {
+				width:50svw;
+			}
+		
+		input{
+			@media only screen and (min-width: 1000px) {
+				font-size:.75svw;
+
+			}
+			
+			@media only screen and (max-width: 1000px) {
+				font-size:1.5svw;
+			}
+		}
 	}
 }
 
 .iframewrapper{
-		margin-left:3em;
-		margin-right:9em;
-		padding-left:1em;
+		margin: 0 auto;
 		width:80%;
-		height:36svw;
-		margin-bottom:1svw;
+		height:32svw;
+		align:center;
+		
+		@media only screen and (min-width: 1000px) {
+				height:16svw;
+			}
+			
+			@media only screen and (max-width: 1000px) {
+				height:32svw;
+			}
+
 	}
 	
 
@@ -347,6 +425,30 @@ h2 {
 <div class="centerbox">
 
 	<div class="portfoliobox">	
+		<h3>About me:</h3>
+		<p>Hi, I'm Anna!<br>I am a 22 year-old prospective technical designer who is currently looking for work. Although I have specialized in bridging the gap between design and production through rapid prototyping, I have developed knowledge in a large number of areas and have experience in fields from pure design to technical art.</p>
+		<p>Before achieving a 2:1 in Gameplay Design and Production from Staffordshire University, my background was a mix of computer science and graphic design - both subjects I chose with the aims of becoming a better game designer. My first ever games were 1-minute text-based 'adventures' written in batch files for the windows console - but I've come a long way since then!
+		<p>The games I play most often tend to be more unique indie games - titles like Noita, Townscaper, and Kerbal Space Program have all informed my experience as a designer. Outside of that, I also often play sandbox games and first-person or vehicle shooters.</p>
+		<p>When I'm not making (or playing) video games, I tend to be found playing or listening to music, playing board games and TTRPGs, and occasionally I find time to bake!</p>
+		
+		<div class="summarybox">
+		
+			<p><span class="bold">Looking to get in contact?</span></p>
+			<p></p>
+			
+			<p><span class="captionemphasis">Email: </span></p>
+			<a href="mailto:annajovis@gmail.com" target="_blank" >AnnaJovis@gmail.com</a>
+			
+			<p><span class="captionemphasis">LinkedIn: </span></p>
+			<a href="https://www.linkedin.com/in/annajcatton/" target="_blank" >www.linkedin.com/in/annajcatton</a>
+			
+			<p><span class="captionemphasis">My CV: </span></p>
+			<a href="Anna Jovis Catton - CV .docx">Download</a>
+		
+		</div>
+	</div>
+
+	<div class="portfoliobox">	
 		<h3>Full Ahead! <span class="captionemphasis">- Co-op twin stick vehicle shooter</span></h3>
 		<div style="margin-bottom:1em; width:80%; margin-left:10%; margin-right:10%;">
 			<img src="Img\FullAhead\TitleScreen.png" style="width:100%">
@@ -376,7 +478,7 @@ h2 {
 			<p><span class="bold">Time:</span> 2 semesters, concurrent with another module throughout.</p>
 			<p><span class="bold">Greatest challenge:</span> Creating the game entirely from scratch required me to learn several tools I had not yet used, such as the Metasounds editor, and the Chaos Wheeled Vehicle systems.</p>
 			<p><span class="bold">Context:</span> Entirely created solo for my Final Year Project module, for which I recieved a first-equivalent grade. (70%)</p>
-			<form action="https://github.com/AnnaJCatton/FullAhead" target="_blank" style="margin:0 auto;width:100%;">
+			<form action="https://github.com/AnnaJCatton/FullAhead" target="_blank">
 				<input type="submit" value="Download the Windows Build (Github)"/>
 			</form>
 			<p>Note: Requires a windows PC and two gamepads.</p>
@@ -388,8 +490,12 @@ h2 {
 	<div class="portfoliobox">	
 		<h3>Pizza Time! <span class="captionemphasis">- Procedural House Generator</span></h3>
 		<div class="iframewrapper">
-			<iframe width="80%" src="https://www.youtube.com/embed/Wz-6t5l0eRs" style="position: absolute; aspect-ratio:2.3; border: none">
+		
+		
+
+			<iframe src="https://www.youtube.com/embed/Wz-6t5l0eRs">
 			</iframe>
+			
 		</div>
 		<p>A tool to generate houses from a procedural pack quickly and easily.
 		Created to ease the workload on a small level design team who were required, thanks to our brief of a pizza delivery game, to build a town in a short period.</p>
@@ -433,30 +539,6 @@ h2 {
 			<img src="Img\Other\NeonsoftMapVersions.png">
 		</div>
 		
-	</div>
-	
-	<div class="portfoliobox">	
-		<h3>About me:</h3>
-		<p>Hi, I'm Anna!<br>I am a 22 year-old prospective technical designer who is currently looking for work. Although I have specialized in bridging the gap between design and production through rapid prototyping, I have developed knowledge in a large number of areas and have experience in fields from pure design to technical art.</p>
-		<p>Before achieving a 2:1 in Gameplay Design and Production from Staffordshire University, my background was a mix of computer science and graphic design - both subjects I chose with the aims of becoming a better game designer. My first ever games were 1-minute text-based 'adventures' written in batch files for the windows console - but I've come a long way since then!
-		<p>The games I play most often tend to be more unique indie games - titles like Noita, Townscaper, and Kerbal Space Program have all informed my experience as a designer. Outside of that, I also often play sandbox games and first-person or vehicle shooters.</p>
-		<p>When I'm not making (or playing) video games, I tend to be found playing or listening to music, playing board games and TTRPGs, and occasionally I find time to bake!</p>
-		
-		<div class="summarybox">
-		
-			<p><span class="bold">Looking to get in contact?</span></p>
-			<p></p>
-			
-			<p><span class="captionemphasis">Email: </span></p>
-			<a href="mailto:annajovis@gmail.com" target="_blank" >AnnaJovis@gmail.com</a>
-			
-			<p><span class="captionemphasis">LinkedIn: </span></p>
-			<a href="https://www.linkedin.com/in/annajcatton/" target="_blank" >www.linkedin.com/in/annajcatton</a>
-			
-			<p><span class="captionemphasis">My CV: </span></p>
-			<a href="Anna Jovis Catton - CV .docx">Download</a>
-		
-		</div>
 	</div>
 	
 	<div style="margin-top:1svw;margin-bottom:1svw;">
